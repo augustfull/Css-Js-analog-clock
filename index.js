@@ -19,11 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
     else secondHand.style.transition = `all 30ms cubic-bezier(0.15, 1.25, 0.35, 1.4)`;
 
     minuteHand.style.transform = `rotate(${minuteDegrees}deg)`;
-    if (minutes == 0) minuteDegrees.style.transition = `all 0s`;
+    if (minutes == 0) minuteHand.style.transition = `all 0s`;
     else minuteHand.style.transition = `all 30ms cubic-bezier(0.15, 1.25, 0.35, 1.4)`;
 
     hourHand.style.transform = `rotate(${hourDegrees}deg)`;
-    if (hours == 0) hourDegrees.style.transition = `all 0s`;
+    if (hours == 0) hourHand.style.transition = `all 0s`;
     else hourHand.style.transition = `all 30ms cubic-bezier(0.15, 1.25, 0.35, 1.4)`;
   }
 
